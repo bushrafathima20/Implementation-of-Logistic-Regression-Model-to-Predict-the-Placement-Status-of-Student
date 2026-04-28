@@ -43,7 +43,6 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 model = LogisticRegression(max_iter=1000)
 model.fit(X_train, y_train)
 
-# Accuracy
 print("Accuracy:", model.score(X_test, y_test))
 
 X1 = X.iloc[:, 0].values.reshape(-1, 1)
